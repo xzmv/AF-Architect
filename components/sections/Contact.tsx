@@ -52,7 +52,7 @@ export default function Contact() {
             <address className="not-italic">
               <div className="flex items-start gap-3">
                 <MapPin size={14} className="text-white/30 mt-1 shrink-0" strokeWidth={1.5} />
-                <p className="font-serif text-lg font-light text-white/80 leading-7 whitespace-pre-line">
+                <p className="font-sans font-light text-sm text-white/80 leading-7 whitespace-pre-line">
                   {tx(t.contact.addressValue, lang)}
                 </p>
               </div>
