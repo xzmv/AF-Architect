@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://alexandrafigueira.pt'),
   title: {
-    default: 'Alexandra Figueira | Arquitecta — Cascais, Portugal',
+    default: 'Alexandra Figueira | Arquitecta, Cascais, Portugal',
     template: '%s | Alexandra Figueira Arquitecta',
   },
   description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     alternateLocale: 'en_GB',
     url: 'https://alexandrafigueira.pt',
     siteName: 'Alexandra Figueira Arquitecta',
-    title: 'Alexandra Figueira | Arquitecta — Cascais, Portugal',
+    title: 'Alexandra Figueira | Arquitecta, Cascais, Portugal',
     description:
       'Arquitecta com mais de 20 anos de experiência em projectos residenciais e comerciais em Portugal. Atelier em Cascais.',
     images: [
@@ -73,13 +73,13 @@ export const metadata: Metadata = {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Alexandra Figueira Arquitecta — Cascais, Portugal',
+        alt: 'Alexandra Figueira Arquitecta, Cascais, Portugal',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alexandra Figueira | Arquitecta — Cascais, Portugal',
+    title: 'Alexandra Figueira | Arquitecta, Cascais, Portugal',
     description:
       'Arquitecta com mais de 20 anos de experiência em projectos residenciais e comerciais em Portugal.',
     images: ['/opengraph-image'],
@@ -118,7 +118,7 @@ const jsonLd = {
       url: 'https://alexandrafigueira.pt',
       name: 'Alexandra Figueira Arquitecta',
       description:
-        'Portfolio de arquitectura — Alexandra Figueira, Cascais, Portugal.',
+        'Portfolio de arquitectura de Alexandra Figueira, Cascais, Portugal.',
       publisher: { '@id': 'https://alexandrafigueira.pt/#person' },
       inLanguage: ['pt-PT', 'en'],
     },

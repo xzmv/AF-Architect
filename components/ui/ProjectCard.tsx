@@ -43,7 +43,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onClick(project) }}
       aria-label={`${tx(t.project.viewProject, lang)}: ${lang === 'pt' ? project.namePt : project.nameEn}`}
     >
-      {/* Image — alternates left/right */}
+      {/* Image alternates left/right */}
       <div className={`${isEven ? 'md:order-2' : 'md:order-1'} overflow-hidden`}>
         <div className="md:group-hover:scale-[1.01] transition-transform duration-700">
           <ImageCarousel

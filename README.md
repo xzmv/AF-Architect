@@ -1,14 +1,14 @@
-# Alexandra Figueira — Arquitecta
+# Alexandra Figueira, Arquitecta
 
 Portfolio website for architect Alexandra Figueira, based in Cascais, Portugal.
 
 ## Stack
 
-- **Framework** — Next.js 14 (App Router, TypeScript)
-- **Styling** — Tailwind CSS v3
-- **Animations** — Framer Motion v11
-- **Fonts** — Cormorant Garamond + Inter (via `next/font/google`)
-- **Icons** — Lucide React
+- **Framework**: Next.js 14 (App Router, TypeScript)
+- **Styling**: Tailwind CSS v3
+- **Animations**: Framer Motion v11
+- **Fonts**: Cormorant Garamond + Inter (via `next/font/google`)
+- **Icons**: Lucide React
 
 ## Features
 
@@ -18,7 +18,7 @@ Portfolio website for architect Alexandra Figueira, based in Cascais, Portugal.
 - In-page project modal
 - Fully responsive (mobile-first)
 - SEO: Metadata API, JSON-LD structured data (Person + WebSite + ProfessionalService), Open Graph, sitemap, robots
-- Zero border-radius design system — clean, neutral palette
+- Zero border-radius design system, clean neutral palette
 
 ## Getting Started
 

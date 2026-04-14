@@ -40,7 +40,7 @@ export default function ImageCarousel({
 
   const transition = shouldReduceMotion
     ? { duration: 0 }
-    : { duration: 0.7, ease: [0.4, 0, 0.2, 1] as const }
+    : { duration: 1.1, ease: [0.4, 0, 0.2, 1] as const }
 
   return (
     <div
@@ -49,20 +49,20 @@ export default function ImageCarousel({
       onMouseLeave={() => setHovering(false)}
     >
       {/* Images */}
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="sync" initial={false}>
         <motion.div
           key={current}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={transition}
-          className="absolute inset-0"
+          className="absolute inset-0 z-[1]"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={images[current]}
-            alt={`${alt} — ${current + 1} / ${images.length}`}
-            title={`${alt} — ${current + 1} de ${images.length}`}
+            alt={`${alt}, foto ${current + 1} de ${images.length}`}
+            title={`${alt}, foto ${current + 1} de ${images.length}`}
             className="w-full h-full object-cover"
             loading={priority && current === 0 ? 'eager' : 'lazy'}
           />

@@ -47,7 +47,7 @@ export default function About() {
               <Image
                 src="/images/alexandra-figueira.png"
                 alt="Alexandra Figueira, Arquitecta"
-                title="Alexandra Figueira — Arquitecta, Cascais, Portugal"
+                title="Alexandra Figueira, Arquitecta, Cascais, Portugal"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 90vw, 40vw"
@@ -66,7 +66,7 @@ export default function About() {
             animate={inView ? 'visible' : 'hidden'}
             className="md:col-span-3 flex flex-col justify-center gap-6"
           >
-            {/* Opening statement — larger */}
+            {/* Opening statement larger */}
             <p className="font-serif text-2xl md:text-3xl font-light text-primary leading-snug">
               {tx(t.about.bio1, lang)}
             </p>

@@ -44,7 +44,7 @@ export default function Hero() {
         className="absolute inset-0 z-0"
         style={{ y: bgY, opacity: bgOpacity }}
       >
-        {/* Placeholder hero image — replace with next/image when real asset provided */}
+        {/* Placeholder hero image replace with next/image when real asset provided */}
         <div
           className="w-full h-full bg-bg-dark"
           style={{
@@ -53,7 +53,7 @@ export default function Hero() {
             backgroundPosition: 'center',
           }}
           role="img"
-          aria-label="Projecto de arquitectura — Alexandra Figueira"
+          aria-label="Projecto de arquitectura por Alexandra Figueira"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/55" />

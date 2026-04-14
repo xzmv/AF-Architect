@@ -50,7 +50,7 @@ export default function Navigation() {
           {/* Wordmark */}
           <Link
             href="#inicio"
-            aria-label="Alexandra Figueira — Início"
+            aria-label="Alexandra Figueira, Início"
             className={`font-serif font-light tracking-[0.18em] text-sm transition-colors duration-300 ${scrolled ? 'text-primary' : 'text-white/90'}`}
           >
             ALEXANDRA FIGUEIRA
