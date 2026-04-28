@@ -2,7 +2,7 @@
 
 import { useRef } from 'react'
 import { motion, useInView, useReducedMotion } from 'framer-motion'
-import { Phone, Mail, Linkedin, MapPin } from 'lucide-react'
+import { Phone, Mail, Linkedin } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 import { tx, t } from '@/data/translations'
 
@@ -39,36 +39,13 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
-          {/* Address */}
+          {/* Contacts */}
           <motion.div
             custom={1}
             variants={vars}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            <p className="text-[0.68rem] font-sans font-medium tracking-[0.18em] uppercase text-white/30 mb-4">
-              {tx(t.contact.address, lang)}
-            </p>
-            <address className="not-italic">
-              <div className="flex items-start gap-3">
-                <MapPin size={14} className="text-white/30 mt-1 shrink-0" strokeWidth={1.5} />
-                <p className="font-sans font-light text-sm text-white/80 leading-7 whitespace-pre-line">
-                  {tx(t.contact.addressValue, lang)}
-                </p>
-              </div>
-            </address>
-          </motion.div>
-
-          {/* Contacts */}
-          <motion.div
-            custom={2}
-            variants={vars}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-          >
-            <p className="text-[0.68rem] font-sans font-medium tracking-[0.18em] uppercase text-white/30 mb-4">
-              {tx(t.contact.contacts, lang)}
-            </p>
             <address className="not-italic flex flex-col gap-4">
               <a
                 href="tel:+351919650101"
