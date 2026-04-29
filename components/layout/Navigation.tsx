@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import LanguageToggle from '@/components/ui/LanguageToggle'
@@ -47,13 +48,16 @@ export default function Navigation() {
         style={{ backdropFilter: scrolled ? 'blur(8px)' : 'none' }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-          {/* Wordmark */}
-          <Link
-            href="#inicio"
-            aria-label="Alexandra Figueira, Início"
-            className={`font-serif font-light tracking-[0.18em] text-sm transition-colors duration-300 ${scrolled ? 'text-primary' : 'text-white/90'}`}
-          >
-            ALEXANDRA FIGUEIRA
+          {/* Logo without slogan */}
+          <Link href="#inicio" aria-label="Alexandra Figueira, Início">
+            <Image
+              src={scrolled ? '/images/logo-black.svg' : '/images/logo-white.svg'}
+              alt="Alexandra Figueira"
+              width={220}
+              height={48}
+              className="w-[180px] md:w-[220px] h-auto transition-opacity duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
