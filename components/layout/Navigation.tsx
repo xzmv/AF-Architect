@@ -28,13 +28,14 @@ export default function Navigation() {
   ]
 
   const handleLinkClick = () => setMenuOpen(false)
+  const useDarkBrand = scrolled || menuOpen
 
   // Over the dark hero = white text; scrolled over light content = dark text
   const linkClass = scrolled
     ? 'label-caps text-primary/60 hover:text-primary transition-colors duration-200'
     : 'label-caps text-white/70 hover:text-white transition-colors duration-200'
 
-  const hamburgerClass = scrolled ? 'text-primary' : 'text-white'
+  const hamburgerClass = useDarkBrand ? 'text-primary' : 'text-white'
 
   return (
     <>
@@ -51,7 +52,7 @@ export default function Navigation() {
           {/* Logo without slogan */}
           <Link href="#inicio" aria-label="Alexandra Figueira, Início">
             <Image
-              src={scrolled ? '/images/logo-black.svg' : '/images/logo-white.svg'}
+              src={useDarkBrand ? '/images/logo-black.svg' : '/images/logo-white.svg'}
               alt="Alexandra Figueira"
               width={220}
               height={48}
